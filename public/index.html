@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fascinating Number Check</title>
+</head>
+<body>
+  <h1>Fascinating Number Check</h1>
+  <label for="numberInput">Enter a 3-digit number:</label>
+  <input type="text" id="numberInput" maxlength="3" pattern="\d{3}" title="Please enter a 3-digit number">
+
+  <label for="bankTypeInput">Enter the bank type (A, B, or C):</label>
+  <input type="text" id="bankTypeInput" maxlength="1" pattern="[A-Ca-c]" title="Please enter A, B, or C">
+
+  <button onclick="checkFascinatingNumber()">Check Fascinating Number</button>
+  <div id="resultMessage"></div>
+  <script src="./dist/index.js"></script>
+</body>
+</html>
